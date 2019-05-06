@@ -147,12 +147,17 @@ small.pull-right a {color: var(--colorHl) !important;}
     color: var(--colorFgFaded);
     border-top-color: var(--colorAc);
 }
-/* profiles */
+/* user profiles */
 .account .cover .avatar-wrapper {border-color: var(--colorAc);}
 .account>.row .fullname {color: var(--colorFgBolded);}
 .account .profile .account-stats .stat-label {color: var(--colorFgFaded);}
 .account .profile .profile-meta {color: var(--colorFgFaded);}
 .account .profile .profile-meta strong {color: var(--colorFg);}
+/* user profile settings */
+.well {
+    background-color: var(--colorAc);
+    border-color: var(--colorAc);
+}
 /* footer */
 #vivaldifooter a {color: var(--colorFg);}
 /* editor */
@@ -170,6 +175,7 @@ small.pull-right a {color: var(--colorHl) !important;}
     background: var(--colorBgDarker);
     border-color: var(--colorBgDarker);
 }
+div.preview.well a {color: var(--colorHl);}
 .taskbar .navbar-nav li.taskbar-composer a,
 .taskbar .navbar-nav li.taskbar-composer a:active,
 .taskbar .navbar-nav li.taskbar-composer a:focus,
@@ -299,5 +305,4 @@ ul.dropdown-menu.dropdown-menu-right a:hover {
 }
 .modal-content {background-color: var(--colorBgDarker);}
 .modal-header {border-color: var(--colorAc);}
-
 }
