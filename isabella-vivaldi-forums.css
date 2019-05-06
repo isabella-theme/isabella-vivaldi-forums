@@ -93,9 +93,12 @@ a.permalink,a.permalink:active,a.permalink:focus,a.permalink:hover {
 }
 .categories>li .card,.category>ul>li .card {height: 60px;}
 .categories>li .card p,.category>ul>li .card p {margin-bottom: 10px;}
+/* tags page */
+.tag-item {color: var(--colorFg);}
+.tag-topic-count {color: var(--colorHl);}
 /* footer */
 #vivaldifooter a {color: var(--colorFg);}
-/* menus,buttons,and modals */
+/* inputs, menus, buttons, and modals */
 .btn-primary,.btn-default {
     color: var(--colorFg);
     background-color: var(--colorBgDarker);
@@ -121,6 +124,10 @@ a.permalink,a.permalink:active,a.permalink:focus,a.permalink:hover {
     background-color: var(--colorBgDarker);
 }
 .header .notif-dropdown-link {border-color: var(--colorBg);}
+.header .notification-list li.unread,
+.slideout-menu .notification-list li.unread {
+    background-color: var(--colorHl);
+}
 .dropdown-menu>li>a:focus,.dropdown-menu>li>a:hover {
     background-color: var(--colorBgFaded);
 }
@@ -154,4 +161,13 @@ a.permalink,a.permalink:active,a.permalink:focus,a.permalink:hover {
     color: var(--colorHlFg);
     background-color: var(--colorHl);
     border-color: var(--colorHl);
+}
+.form-control {
+    color: var(--colorFg);
+    background-color: var(--colorBgDarker);
+    border-color: var(--colorBgDarker);
+}
+.form-control:focus {
+    border-color: var(--colorBgDarker);
+    box-shadow: 0 0 4px var(--colorAc);
 }
