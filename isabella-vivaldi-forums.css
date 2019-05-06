@@ -1,16 +1,5 @@
 /* https://isabella-theme.github.io/ */
 body {
-    --colorBlack: #101013;
-    --colorBlue: #6bc6ef;
-    --colorGreen: #77dd77;
-    --colorPink: #f772ad;
-    --colorPurple: #b19cd9;
-    --colorRed: #be2a18;
-    --colorWhite: #f7f7f7;
-    --colorYellow: #fdfd96;
-    --colorComment: #69696d;
-    --colorAddition: #004700bd;
-    --colorDeletion: #830d0dcc;
     --colorHl: #be4318;
     --colorHlFaded: #b18879;
     --colorHlFg: var(--colorWhite);
@@ -27,6 +16,10 @@ body {
 }
 /* globals */
 a:focus,a:hover {color: var(--colorHl);}
+blockquote {
+    background-color: var(--colorBgDarker);
+    border-color: var(--colorBgDarker);
+}
 code {
     color: var(--colorFgBolded);
     background-color: var(--colorAc);
@@ -70,6 +63,10 @@ h6 .small,h6 small {
     background: var(--colorHl);
     border-color: var(--colorHl);
 }
+#submenu a:focus .unread-count:after,#submenu a:hover .unread-count:after,
+#submenu li.active>a .unread-count:after {
+    color: white; /* doesn't accept variables */
+}
 /* content */
 /* forum path */
 .breadcrumb>.active,.breadcrumb>li+li:before {color: var(--colorFg);}
@@ -108,14 +105,50 @@ a.permalink,a.permalink:active,a.permalink:focus,a.permalink:hover {
     color: var(--colorHlFg);
     background-color: var(--colorHl);
 }
+.status.offline {color: gray;}
+/* groups page */
+.panel {
+    background-color: var(--colorBgDarker);
+    border-color: var(--colorBgDarker);
+}
+.panel-default>.panel-heading {
+    color: var(--colorFg);
+    background-color: var(--colorBgDarker);
+    border-color: var(--colorBgDarker);
+}
+/* groups profiles */
+.posts-list .posts-list-item .post-body {border-right-color: var(--colorHl);}
+.table-striped>tbody>tr:nth-of-type(odd) {background-color: var(--colorBg);}
+.table>tbody>tr>td,.table>tbody>tr>th,.table>tfoot>tr>td,.table>tfoot>tr>th,
+.table>thead>tr>td,.table>thead>tr>th {
+    border-top-color: var(--colorBg);
+}
+.table-hover>tbody>tr:hover {background-color: var(--colorBgFaded);}
 /* threads */
 .topic .posts>li a {color: var(--colorHl);}
 .topic .posts>li a:hover {color: var(--colorFg);}
+.edit-icon {color: var(--colorHl);}
 small.pull-right a {color: var(--colorHl) !important;}
 .votes a {background-color: var(--colorBgDarker);}
+.topic [component="post/downvote"].downvoted,
+.topic [component="post/upvote"].upvoted {
+    color: var(--colorHlFg) !important;
+    background-color: var(--colorHl);
+}
+.topic .threaded-replies .replies-last {color: var(--colorFg);}
+.topic [component="post/parent"] {background-color: var(--colorBgDarker);}
+.topic .post-signature {
+    color: var(--colorFgFaded);
+    border-top-color: var(--colorAc);
+}
 /* footer */
 #vivaldifooter a {color: var(--colorFg);}
-/* inputs,menus,buttons,and modals */
+/* inputs, menus, buttons, and modals */
+.alert-info {
+    color: var(--colorHlFg);
+    background-color: var(--colorHl);
+    border-color: var(--colorHl);
+}
 .btn-primary,.btn-default {
     color: var(--colorFg);
     background-color: var(--colorBgDarker);
@@ -204,6 +237,12 @@ small.pull-right a {color: var(--colorHl) !important;}
 .form-control:focus {
     border-color: var(--colorBgDarker);
     box-shadow: 0 0 4px var(--colorAc);
+}
+.bootstrap-tagsinput {
+    color: var(--colorFg);
+    background-color: var(--colorAc);
+    border-color: var(--colorAc);
+    box-shadow: 0 1px 1px var(--colorAc);
 }
 .input-group-addon {
     color: var(--colorFg);
