@@ -25,6 +25,8 @@ body {
     color: var(--colorFg);
     background-color: var(--colorBg);
 }
+/* globals */
+a:focus,a:hover {color: var(--colorHl);}
 /* header */
 #vivaldiheader {background: var(--colorAc);}
 #vivaldiheader #vivaldilogo img,#vivaldimenu a .sub-arrow {
@@ -42,6 +44,18 @@ body {
 }
 #vivaldimenu ul,#vivaldimenu ul li {border-color: var(--colorBgDarker)}
 #vivaldimenu ul a:hover {background: var(--colorBgFaded);}
+/* forum navigation */
+#submenu {
+    color: var(--colorFg);
+    background-color: var(--colorAc);
+    border-color: var(--colorAc);
+}
+#submenu a:focus,#submenu a:hover,#submenu li.active>a {
+    color: var(--colorHl);
+    background-color: var(--colorBg);
+}
+/* content */
+.posts-list .posts-list-item .topic-title, a {color: var(--colorHl);}
 /* menus and modals */
 .dropdown-menu {
     background-color: var(--colorBgDarker);
