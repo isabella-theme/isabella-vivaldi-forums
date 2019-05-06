@@ -25,6 +25,11 @@ code {
     background-color: var(--colorAc);
 }
 hr {border-color: var(--colorBgDarker);}
+pre {
+    color: var(--colorFg);
+    background-color: var(--colorBgDarker);
+    border-color: var(--colorBgDarker);
+}
 .h1 .small,.h1 small,.h2 .small,.h2 small,.h3 .small,.h3 small,.h4 .small,
 .h4 small,.h5 .small,.h5 small,.h6 .small,.h6 small,h1 .small,h1 small,
 h2 .small,h2 small,h3 .small,h3 small,h4 .small,h4 small,h5 .small,h5 small,
@@ -141,9 +146,15 @@ small.pull-right a {color: var(--colorHl) !important;}
     color: var(--colorFgFaded);
     border-top-color: var(--colorAc);
 }
+/* profiles */
+.account .cover .avatar-wrapper {border-color: var(--colorAc);}
+.account>.row .fullname {color: var(--colorFgBolded);}
+.account .profile .account-stats .stat-label {color: var(--colorFgFaded);}
+.account .profile .profile-meta {color: var(--colorFgFaded);}
+.account .profile .profile-meta strong {color: var(--colorFg);}
 /* footer */
 #vivaldifooter a {color: var(--colorFg);}
-/* inputs, menus, buttons, and modals */
+/* inputs,menus,buttons,and modals */
 .alert-info {
     color: var(--colorHlFg);
     background-color: var(--colorHl);
@@ -172,6 +183,12 @@ small.pull-right a {color: var(--colorHl) !important;}
     color: var(--colorFg);
     background-color: var(--colorBgFaded);
     border-color: var(--colorBgFaded);
+}
+.fab {background-color: var(--colorHl);}
+.btn-group.account-fab .fab {color: var(--colorFg);}
+ul.dropdown-menu.dropdown-menu-right a,
+ul.dropdown-menu.dropdown-menu-right a:hover {
+    color: var(--colorFg);
 }
 .close {
     color: var(--colorFg);
