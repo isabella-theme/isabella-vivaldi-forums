@@ -54,6 +54,11 @@ a:focus,a:hover {color: var(--colorHl);}
     color: var(--colorHl);
     background-color: var(--colorBg);
 }
+.unread-count:after {
+    color: var(--colorHlFg);
+    background: var(--colorHl);
+    border-color: var(--colorHl);
+}
 /* content */
 /* forum path */
 .breadcrumb>.active,.breadcrumb>li+li:before {color: var(--colorFg);}
