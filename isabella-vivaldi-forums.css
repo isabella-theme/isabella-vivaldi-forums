@@ -1,0 +1,27 @@
+/* https://isabella-theme.github.io/ */
+body {
+    --colorBlack: #101013;
+    --colorBlue: #6bc6ef;
+    --colorGreen: #77dd77;
+    --colorPink: #f772ad;
+    --colorPurple: #b19cd9;
+    --colorRed: #be2a18;
+    --colorWhite: #f7f7f7;
+    --colorYellow: #fdfd96;
+    --colorComment: #69696d;
+    --colorAddition: #004700bd;
+    --colorDeletion: #830d0dcc;
+    --colorHl: #be4318;
+    --colorHlFaded: #b18879;
+    --colorHlFg: var(--colorWhite);
+    --colorBg: #333335;
+    --colorBgDarker: #232325;
+    --colorBgFaded: #444445e8;
+    --colorFg: #d1d1d1;
+    --colorFgBolded: white;
+    --colorFgFaded: #87878c;
+    --colorFgFadedMore: #68686c;
+    --colorAc: #101013;
+    color: var(--colorFg);
+    background-color: var(--colorBg);
+}
