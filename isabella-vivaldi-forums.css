@@ -55,7 +55,30 @@ a:focus,a:hover {color: var(--colorHl);}
     background-color: var(--colorBg);
 }
 /* content */
-.posts-list .posts-list-item .topic-title, a {color: var(--colorHl);}
+/* forum path */
+.breadcrumb>.active,.breadcrumb>li+li:before {color: var(--colorFg);}
+.posts-list .posts-list-item .topic-title,a {color: var(--colorHl);}
+/* forum categories */
+.categories>li:hover,.category>ul>li:hover {background-color: transparent;}
+.categories-title {color: var(--colorFgFaded);}
+.categories .description,.category .description,.subcategory .description {
+    color: var(--colorFg);
+}
+.categories .category-children small,.category .category-children small,
+.subcategory .category-children small {
+    color: var(--colorFgFaded);
+}
+.category-children a small:hover {color: var(--colorHl);}
+/* category stats */
+.stats small {color: var(--colorFgFaded);}
+/* last post teasers */
+a.permalink,a.permalink:active,a.permalink:focus,a.permalink:hover {
+    color: var(--colorFgFaded);
+}
+.categories>li .card,.category>ul>li .card {height: 60px;}
+.categories>li .card p,.category>ul>li .card p {margin-bottom: 10px;}
+/* footer */
+#vivaldifooter a {color: var(--colorFg);}
 /* menus and modals */
 .dropdown-menu {
     background-color: var(--colorBgDarker);
