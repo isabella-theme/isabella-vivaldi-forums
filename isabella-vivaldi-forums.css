@@ -154,7 +154,32 @@ small.pull-right a {color: var(--colorHl) !important;}
 .account .profile .profile-meta strong {color: var(--colorFg);}
 /* footer */
 #vivaldifooter a {color: var(--colorFg);}
-/* inputs,menus,buttons,and modals */
+/* editor */
+.composer {background: var(--colorBg);}
+.composer .resizer .trigger {
+    background: var(--colorAc);
+    border-color: var(--colorAc);
+}
+.composer .formatting-bar .formatting-group li {color: var(--colorFg);}
+.composer .formatting-bar .formatting-group li:focus,
+.composer .formatting-bar .formatting-group li:hover {
+    background-color: var(--colorBgFaded);
+}
+.composer .write,.composer .preview {
+    background: var(--colorBgDarker);
+    border-color: var(--colorBgDarker);
+}
+.taskbar .navbar-nav li.taskbar-composer a,
+.taskbar .navbar-nav li.taskbar-composer a:active,
+.taskbar .navbar-nav li.taskbar-composer a:focus,
+.taskbar .navbar-nav li.taskbar-composer a:hover {
+    background: var(--colorHl);
+}
+.taskbar .navbar-nav li.taskbar-chat a i,
+.taskbar .navbar-nav li.taskbar-composer a i {
+    color: white;/* doesn't accept variables */
+}
+/* inputs, menus, buttons, and modals */
 .alert-info {
     color: var(--colorHlFg);
     background-color: var(--colorHl);
