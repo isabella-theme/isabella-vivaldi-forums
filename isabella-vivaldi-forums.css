@@ -27,6 +27,12 @@ body {
 }
 /* globals */
 a:focus,a:hover {color: var(--colorHl);}
+.h1 .small,.h1 small,.h2 .small,.h2 small,.h3 .small,.h3 small,.h4 .small,
+.h4 small,.h5 .small,.h5 small,.h6 .small,.h6 small,h1 .small,h1 small,
+h2 .small,h2 small,h3 .small,h3 small,h4 .small,h4 small,h5 .small,h5 small,
+h6 .small,h6 small {
+    color: var(--colorFg);
+}
 /* header */
 #vivaldiheader {background: var(--colorAc);}
 #vivaldiheader #vivaldilogo img,#vivaldimenu a .sub-arrow {
@@ -63,9 +69,11 @@ a:focus,a:hover {color: var(--colorHl);}
 /* forum path */
 .breadcrumb>.active,.breadcrumb>li+li:before {color: var(--colorFg);}
 .posts-list .posts-list-item .topic-title,a {color: var(--colorHl);}
+.categories>p,.category>p,.subcategory>p {color: var(--colorFgFaded);}
 /* forum categories */
 .categories>li:hover,.category>ul>li:hover {background-color: transparent;}
 .categories-title {color: var(--colorFgFaded);}
+.category>ul>li:not(.unread) h2 a {color: var(--colorFgFaded);}
 .categories .description,.category .description,.subcategory .description {
     color: var(--colorFg);
 }
@@ -74,6 +82,9 @@ a:focus,a:hover {color: var(--colorHl);}
     color: var(--colorFgFaded);
 }
 .category-children a small:hover {color: var(--colorHl);}
+.category>ul>li .tag-list .tag {
+    background: var(--colorBgDarker);
+}
 /* category stats */
 .stats small {color: var(--colorFgFaded);}
 /* last post teasers */
@@ -84,11 +95,26 @@ a.permalink,a.permalink:active,a.permalink:focus,a.permalink:hover {
 .categories>li .card p,.category>ul>li .card p {margin-bottom: 10px;}
 /* footer */
 #vivaldifooter a {color: var(--colorFg);}
-/* menus and modals */
+/* menus,buttons,and modals */
+.btn-primary,.btn-default {
+    color: var(--colorFg);
+    background-color: var(--colorBgDarker);
+    border-color: var(--colorBgDarker);
+}
+.btn-primary:hover,.btn-primary.active,.btn-primary.focus,.btn-primary:active,
+.btn-primary:focus,.btn-primary:hover,.open>.dropdown-toggle.btn-primary,
+.btn-default.active,.btn-default.focus,.btn-default:active,.btn-default:focus,
+.btn-default:hover,.open>.dropdown-toggle.btn-default {
+    color: var(--colorFg);
+    background-color: var(--colorBgFaded);
+    border-color: var(--colorBgFaded);
+}
 .dropdown-menu {
     background-color: var(--colorBgDarker);
     border-color: var(--colorBgDarker);
 }
+.dropdown-menu>li>a {color: var(--colorFg);}
+.dropdown-menu>li>a:focus,.dropdown-menu>li>a:hover {color: var(--colorFg);}
 .dropdown-menu .divider {background-color: var(--colorBg);}
 .navbar-default .navbar-nav>.open>a,.navbar-default .navbar-nav>.open>a:focus,
 .navbar-default .navbar-nav>.open>a:hover {
@@ -99,6 +125,7 @@ a.permalink,a.permalink:active,a.permalink:focus,a.permalink:hover {
     background-color: var(--colorBgFaded);
 }
 .header .chat-list,.slideout-menu .chat-list {color: var(--colorFg);}
+.chats-list>li .avatar-placeholder {background: var(--colorBg);}
 .chats-list,.header .chat-list>li:not(:last-child),
 .slideout-menu .chat-list>li:not(:last-child) {
     border-color: var(--colorBg);
@@ -107,3 +134,24 @@ a.permalink,a.permalink:active,a.permalink:focus,a.permalink:hover {
     background: var(--colorBgFaded);
 }
 .chats-list>li {border-color: var(--colorBg);}
+.pagination>li>a,.pagination>li>span,.pagination>.disabled>a,
+.pagination>.disabled>a:focus,.pagination>.disabled>a:hover,
+.pagination>.disabled>span,.pagination>.disabled>span:focus,
+.pagination>.disabled>span:hover {
+    color: var(--colorFg);
+    background-color: var(--colorBgDarker);
+    border-color: var(--colorBgDarker);
+}
+.pagination>li>a:focus,.pagination>li>a:hover,.pagination>li>span:focus,
+.pagination>li>span:hover {
+    color: var(--colorFg);
+    background-color: var(--colorBgFaded);
+    border-color: var(--colorBgFaded);
+}
+.pagination>.active>a,.pagination>.active>a:focus,.pagination>.active>a:hover,
+.pagination>.active>span,.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+    color: var(--colorHlFg);
+    background-color: var(--colorHl);
+    border-color: var(--colorHl);
+}
