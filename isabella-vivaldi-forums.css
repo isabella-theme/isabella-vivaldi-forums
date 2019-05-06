@@ -27,6 +27,11 @@ body {
 }
 /* globals */
 a:focus,a:hover {color: var(--colorHl);}
+code {
+    color: var(--colorFgBolded);
+    background-color: var(--colorAc);
+}
+hr {border-color: var(--colorBgDarker);}
 .h1 .small,.h1 small,.h2 .small,.h2 small,.h3 .small,.h3 small,.h4 .small,
 .h4 small,.h5 .small,.h5 small,.h6 .small,.h6 small,h1 .small,h1 small,
 h2 .small,h2 small,h3 .small,h3 small,h4 .small,h4 small,h5 .small,h5 small,
@@ -70,6 +75,7 @@ h6 .small,h6 small {
 .breadcrumb>.active,.breadcrumb>li+li:before {color: var(--colorFg);}
 .posts-list .posts-list-item .topic-title,a {color: var(--colorHl);}
 .categories>p,.category>p,.subcategory>p {color: var(--colorFgFaded);}
+.breadcrumb .fa {color: var(--colorFg);}
 /* forum categories */
 .categories>li:hover,.category>ul>li:hover {background-color: transparent;}
 .categories-title {color: var(--colorFgFaded);}
@@ -96,9 +102,20 @@ a.permalink,a.permalink:active,a.permalink:focus,a.permalink:hover {
 /* tags page */
 .tag-item {color: var(--colorFg);}
 .tag-topic-count {color: var(--colorHl);}
+/* users page */
+.nav>li>a:focus,.nav>li>a:hover,.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,.nav-pills>li.active>a:hover {
+    color: var(--colorHlFg);
+    background-color: var(--colorHl);
+}
+/* threads */
+.topic .posts>li a {color: var(--colorHl);}
+.topic .posts>li a:hover {color: var(--colorFg);}
+small.pull-right a {color: var(--colorHl) !important;}
+.votes a {background-color: var(--colorBgDarker);}
 /* footer */
 #vivaldifooter a {color: var(--colorFg);}
-/* inputs, menus, buttons, and modals */
+/* inputs,menus,buttons,and modals */
 .btn-primary,.btn-default {
     color: var(--colorFg);
     background-color: var(--colorBgDarker);
@@ -112,6 +129,23 @@ a.permalink,a.permalink:active,a.permalink:focus,a.permalink:hover {
     background-color: var(--colorBgFaded);
     border-color: var(--colorBgFaded);
 }
+.btn-info {
+    color: var(--colorFg);
+    background-color: var(--colorBgDarker);
+    border-color: var(--colorBgDarker);
+}
+.btn-info.active,.btn-info.focus,.btn-info:active,.btn-info:focus,
+.btn-info:hover,.open>.dropdown-toggle.btn-info {
+    color: var(--colorFg);
+    background-color: var(--colorBgFaded);
+    border-color: var(--colorBgFaded);
+}
+.close {
+    color: var(--colorFg);
+    text-shadow: initial;
+    opacity: 0.6;
+}
+.close:focus,.close:hover {color: var(--colorFg);}
 .dropdown-menu {
     background-color: var(--colorBgDarker);
     border-color: var(--colorBgDarker);
@@ -171,3 +205,10 @@ a.permalink,a.permalink:active,a.permalink:focus,a.permalink:hover {
     border-color: var(--colorBgDarker);
     box-shadow: 0 0 4px var(--colorAc);
 }
+.input-group-addon {
+    color: var(--colorFg);
+    background-color: var(--colorBgDarker);
+    border-color: var(--colorBgDarker);
+}
+.modal-content {background-color: var(--colorBgDarker);}
+.modal-header {border-color: var(--colorAc);}
