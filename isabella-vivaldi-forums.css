@@ -25,3 +25,43 @@ body {
     color: var(--colorFg);
     background-color: var(--colorBg);
 }
+/* header */
+#vivaldiheader {background: var(--colorAc);}
+#vivaldiheader #vivaldilogo img,#vivaldimenu a .sub-arrow {
+    filter: grayscale(1) invert(100%);
+}
+#vivaldiheader a,#vivaldiheader a:active,
+#vivaldiheader a:focus,#vivaldiheader a:visited {
+    color: var(--colorFg);
+}
+#vivaldimenu a.current,#vivaldimenu a:hover {color: var(--colorHl);}
+/* header drop downs */
+#vivaldimenu ul {
+    color: var(--colorFg);
+    background: var(--colorBgDarker);
+}
+#vivaldimenu ul,#vivaldimenu ul li {border-color: var(--colorBgDarker)}
+#vivaldimenu ul a:hover {background: var(--colorBgFaded);}
+/* menus and modals */
+.dropdown-menu {
+    background-color: var(--colorBgDarker);
+    border-color: var(--colorBgDarker);
+}
+.dropdown-menu .divider {background-color: var(--colorBg);}
+.navbar-default .navbar-nav>.open>a,.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+    background-color: var(--colorBgDarker);
+}
+.header .notif-dropdown-link {border-color: var(--colorBg);}
+.dropdown-menu>li>a:focus,.dropdown-menu>li>a:hover {
+    background-color: var(--colorBgFaded);
+}
+.header .chat-list,.slideout-menu .chat-list {color: var(--colorFg);}
+.chats-list,.header .chat-list>li:not(:last-child),
+.slideout-menu .chat-list>li:not(:last-child) {
+    border-color: var(--colorBg);
+}
+.header .chat-list>li:hover,.slideout-menu .chat-list>li:hover {
+    background: var(--colorBgFaded);
+}
+.chats-list>li {border-color: var(--colorBg);}
