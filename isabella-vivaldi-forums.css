@@ -1,3 +1,4 @@
+@-moz-document domain("forum.vivaldi.net") {
 /* https://isabella-theme.github.io/ */
 body {
     --colorHl: #be4318;
@@ -179,11 +180,16 @@ small.pull-right a {color: var(--colorHl) !important;}
 .taskbar .navbar-nav li.taskbar-composer a i {
     color: white;/* doesn't accept variables */
 }
-/* inputs, menus, buttons, and modals */
-.alert-info {
+/* inputs,menus,buttons,and modals */
+.alert-warning,.alert-info {
     color: var(--colorHlFg);
     background-color: var(--colorHl);
     border-color: var(--colorHl);
+}
+.alert-window .alert {background-color: var(--colorAc);}
+.alert-window .alert.alert-info {
+    color: var(--colorFg);
+    border-color: var(--colorAc);
 }
 .btn-primary,.btn-default {
     color: var(--colorFg);
@@ -293,3 +299,5 @@ ul.dropdown-menu.dropdown-menu-right a:hover {
 }
 .modal-content {background-color: var(--colorBgDarker);}
 .modal-header {border-color: var(--colorAc);}
+
+}
