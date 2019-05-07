@@ -133,6 +133,10 @@ a.permalink,a.permalink:active,a.permalink:focus,a.permalink:hover {
 /* threads */
 .topic .posts>li a {color: var(--colorHl);}
 .topic .posts>li a:hover {color: var(--colorFg);}
+.topic .posts .content .toggle {
+    background-color: var(--colorBg);
+    border-color: var(--colorBg);
+}
 .edit-icon {color: var(--colorHl);}
 small.pull-right a {color: var(--colorHl) !important;}
 .votes a {background-color: var(--colorBgDarker);}
@@ -226,6 +230,16 @@ div.preview.well a {color: var(--colorHl);}
 ul.dropdown-menu.dropdown-menu-right a,
 ul.dropdown-menu.dropdown-menu-right a:hover {
     color: var(--colorFg);
+}
+a.list-group-item,.list-group-item {
+    color: var(--colorFg);
+    background-color: var(--colorBgDarker);
+    border-color: var(--colorBgDarker);
+}
+a.list-group-item:focus,a.list-group-item:hover {
+    color: var(--colorFg);
+    background-color: var(--colorBgFaded);
+    border-color: var(--colorBgFaded);
 }
 .close {
     color: var(--colorFg);
