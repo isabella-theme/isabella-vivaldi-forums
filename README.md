@@ -18,6 +18,6 @@ So, to install using the Vivaldi Forum Mod:
 1. Install the Vivaldi Forum Mod [from here.](https://chrome.google.com/webstore/detail/vivaldi-forum-mod/hipnollokpifchndpfhnlfjbdnkhiigg?hl=en-US)
 2. Open the Vivaldi Forum Mod's [options page.](chrome-extension://hipnollokpifchndpfhnlfjbdnkhiigg/options/options.html)
 3. Under "Theme Machine" click on any of the available themes and click "Import"
-4. Copy this code: `{"themeName":"Isabella","colorBg":"#333335","colorFg":"#d1d1d1","colorHi":"#be4318","colorBtn":"#6176a5","colorDrop":"#455182","colorLi":"#be4318","colorLi2":"#be4318"}`
-5. Paste it in the input box that opens, and lcick "Save."
+4. Paste this code into the input box that opens: `{"themeName":"Isabella","colorBg":"#333335","colorFg":"#d1d1d1","colorHi":"#be4318","colorBtn":"#6176a5","colorDrop":"#455182","colorLi":"#be4318","colorLi2":"#be4318"}`
+5. Click "Save."
 6. Refresh any open Vivaldi Forum tabs.
